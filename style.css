@@ -273,7 +273,7 @@ body {
 
 .home-sci {
     position: absolute;
-    bottom: 100px;
+    bottom: 40px;
     width: 170px;
     display: flex;
     justify-content: space-between;
@@ -306,6 +306,7 @@ body {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    margin-bottom: 80px;
 }
 
 .home-sci a:hover {
@@ -1124,6 +1125,7 @@ span {
     .home-sci a {
         width: 36px;
         height: 36px;
+        bottom: -80px;
     }
 }
 
