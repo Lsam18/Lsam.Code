@@ -1108,7 +1108,7 @@ span {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
@@ -1118,12 +1118,12 @@ span {
     }
     .home-sci {
         width: 180px;
-        margin-bottom: -36px;
+        margin-bottom: -23px;
 
     }
     .home-sci a {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
     }
 }
 
