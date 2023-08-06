@@ -273,7 +273,7 @@ body {
 
 .home-sci {
     position: absolute;
-    bottom: 40px;
+    bottom: 100px;
     width: 170px;
     display: flex;
     justify-content: space-between;
