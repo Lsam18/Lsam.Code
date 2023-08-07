@@ -905,27 +905,27 @@ span {
 
 .portfolio-box {
     width: calc(33.33% - 2rem);
-    /* Each box takes one-third of the container width with gap */
     max-width: 400px;
-    /* Slightly increased max-width for larger boxes */
     border-radius: 2rem;
-    box-shadow: 0 0 1rem #081b29;
+    box-shadow: 0 0 0.5rem rgba(8, 27, 41, 0.4);
     overflow: hidden;
     margin-bottom: 40px;
     margin-top: 40px;
     position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .portfolio-box img {
     max-width: 100%;
     max-height: 100%;
-    transition: .5s ease;
+    transition: transform 0.5s ease;
     width: auto;
     height: auto;
 }
 
-.portfolio-box:hover img {
-    transform: scale(1.1);
+.portfolio-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(8, 27, 41, 0.3);
 }
 
 .portfolio-layer {
@@ -942,7 +942,7 @@ span {
     text-align: center;
     padding: 0 2rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: transform 0.5s;
     border-radius: 0 0 2rem 2rem;
 }
 
@@ -952,18 +952,15 @@ span {
 
 .portfolio-layer h4 {
     font-size: 1.2rem;
-    color: #00abf0;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+    color: #ffffff;
 }
 
 .portfolio-layer p {
     font-size: 0.8rem;
     margin: 0.3rem 0 1rem;
-    color: black;
+    color: white;
     font-weight: 400;
-    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
 }
-
 
 .portfolio-layer a {
     display: inline-flex;
@@ -971,7 +968,7 @@ span {
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background: #ededed;
+    background: #f5f5f5;
     border-radius: 50%;
 }
 
