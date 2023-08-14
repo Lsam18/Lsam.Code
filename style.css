@@ -174,7 +174,7 @@ body {
 .cursor {
     margin-left: 3px;
     animation: none;
-   
+
 }
 
 /* Keyframes for the typing effect */
@@ -939,7 +939,7 @@ span {
     flex: 0 0 calc(30.33% - 17px);
     position: relative;
     margin-bottom: 15px;
-    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
     border: 3px solid transparent;
     border-radius: 10px;
     overflow: hidden;
@@ -947,10 +947,10 @@ span {
 
 .certification-box:hover {
     border: 3px solid #00abf0;
-    background-color: #081b29; 
-    transform: translateY(-3px); 
-    z-index: 1; 
-    
+    background-color: #081b29;
+    transform: translateY(-3px);
+    z-index: 1;
+
 }
 
 .certification-image {
@@ -972,7 +972,7 @@ span {
     align-items: center;
     padding: 10px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 171, 240, 0.9)); 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 171, 240, 0.9));
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -1011,7 +1011,7 @@ span {
 
 .certification-layer a {
     margin-top: 8px;
-    color: #5f0505; 
+    color: #5f0505;
     transition: color 0.3s ease-in-out;
     font-weight: bold;
     text-decoration: none;
@@ -1034,16 +1034,16 @@ span {
     transform: translate(-50%, -50%);
     font-size: 18px;
     color: #000000;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 50%;
-    padding: 6px; 
+    padding: 6px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     margin-top: 10px;
 }
 
 .certification-link i:hover {
-    background-color: #000000; 
-    color: white; 
+    background-color: #000000;
+    color: white;
 }
 
 .btn-cert {
@@ -1057,7 +1057,7 @@ span {
     border: 2px solid #00abf0;
     border-radius: 8px;
     font-size: 17px;
-    color: #0d2c43; 
+    color: #0d2c43;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1072,12 +1072,12 @@ span {
 }
 
 .btn-cert a:hover {
-    color: #00abf0; 
-    
+    color: #00abf0;
+
 }
 
 .btn-cert a:hover::before {
-    width: 100px; 
+    width: 100px;
 }
 
 .btn-cert a::before {
