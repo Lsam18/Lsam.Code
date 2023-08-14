@@ -836,7 +836,7 @@ span {
     align-content: center;
     flex-wrap: center;
     padding: 2rem 9%;
-    background: #0d2c43;
+    background: #081b29;
 }
 
 .footer-text p {
@@ -975,7 +975,192 @@ span {
 .portfolio-layer a i {
     font-size: 1.5rem;
     color: #081b29;
+    
 }
+
+/* Certifications Section */
+.certifications {
+    padding: 30px 0;
+    background: #0d2c43;
+    color: rgb(238, 255, 0);
+}
+
+.certifications p {
+    color: white;
+}
+
+.highlight {
+    color: white;
+}
+
+.subtle-highlight {
+    color: #00abf0;
+}
+
+.subtle-text {
+    font-size: 16px;
+}
+
+.certifications .heading {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.certification-box {
+    flex: 0 0 calc(30.33% - 17px);
+    position: relative;
+    margin-bottom: 15px;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.certification-box:hover {
+    border: 3px solid #00abf0;
+    background-color: #081b29; 
+    transform: translateY(-3px); 
+    z-index: 1; 
+    
+}
+
+.certification-image {
+    width: 100%;
+    height: 100%;
+    max-width: 200%;
+    border-radius: 8px;
+}
+
+.certification-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 171, 240, 0.9)); 
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.certification-box:hover .certification-layer {
+    opacity: 1;
+    animation: fade-in 0.3s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.certification-box:hover .certification-layer {
+    opacity: 1;
+}
+
+.certification-layer h4 {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.certification-layer p {
+    color: #ffffff;
+    font-size: 12px;
+    max-width: 70%;
+    margin: 6px auto;
+}
+
+.certification-layer a {
+    margin-top: 8px;
+    color: #5f0505; 
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.certification-layer a:hover {
+    color: #081b29;
+}
+
+
+.certification-link {
+    position: relative;
+}
+
+.certification-link i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    padding: 6px; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.certification-link i:hover {
+    background-color: #000000; 
+    color: white; 
+}
+
+
+
+
+/* Original CSS code */
+
+/* Add media query for screens with maximum width 768px (typical mobile screen width) */
+@media (max-width: 768px) {
+    .certifications {
+        padding: 15px 0;
+    }
+
+    .certification-box {
+        flex: 0 0 100%;
+    }
+
+    .certification-layer h4 {
+        font-size: 14px;
+    }
+
+    .certification-layer p {
+        font-size: 10px;
+    }
+
+    .certification-layer a {
+        font-size: 12px;
+    }
+
+    .certification-link i {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}
+
+
+
 
 /* Media query for mobile views */
 @media (max-width: 768px) {
@@ -1047,6 +1232,7 @@ span {
 @media (max-width: 768px) {
     .header {
         background: #081b29;
+
     }
     #menu-icon {
         display: block;
