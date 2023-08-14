@@ -233,6 +233,7 @@ body {
     transition: .5s;
 }
 
+
 .btn-box a:hover,
 .btn-box .btn:hover {
     color: #00abf0;
@@ -885,98 +886,16 @@ span {
 
 /* Common styles for both desktop and mobile */
 .portfolio {
+    padding: 30px 0;
     background: #081b29;
-    margin-top: 1rem;
-    padding: 2rem 0;
+    color: rgb(238, 255, 0);
 }
 
-.portfolio h2 {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 2000px;
-    margin: 0 auto;
-}
-
-.portfolio-box {
-    width: calc(33.33% - 2rem);
-    max-width: 400px;
-    border-radius: 2rem;
-    box-shadow: 0 0 0.5rem rgba(8, 27, 41, 0.4);
-    overflow: hidden;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.portfolio-box img {
-    max-width: 100%;
-    max-height: 100%;
-    transition: transform 0.5s ease;
-    width: auto;
-    height: auto;
-}
-
-.portfolio-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(8, 27, 41, 0.3);
-}
-
-.portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #00abf0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 2rem;
-    transform: translateY(100%);
-    transition: transform 0.5s;
-    border-radius: 0 0 2rem 2rem;
-}
-
-.portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-}
-
-.portfolio-layer h4 {
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-.portfolio-layer p {
-    font-size: 0.8rem;
-    margin: 0.3rem 0 1rem;
+.portfolio p {
     color: white;
-    font-weight: 400;
 }
 
-.portfolio-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: #f5f5f5;
-    border-radius: 50%;
-}
 
-.portfolio-layer a i {
-    font-size: 1.5rem;
-    color: #081b29;
-    
-}
 
 /* Certifications Section */
 .certifications {
@@ -984,6 +903,7 @@ span {
     background: #0d2c43;
     color: rgb(238, 255, 0);
 }
+
 
 .certifications p {
     color: white;
@@ -1126,9 +1046,104 @@ span {
     color: white; 
 }
 
+.btn-cert {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #0d2c43; 
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-cert a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-cert a:hover {
+    color: #00abf0; 
+    
+}
+
+.btn-cert a:hover::before {
+    width: 100px; 
+}
+
+.btn-cert a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-cert:hover::before {
+    width: 100%;
+}
+
+.btn-cert:hover {
+    color: #00abf0;
+    background: #081b29;
+}
+
+.animate.scroll {
+    animation: scroll 3s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 
 @media (max-width: 400px) {
     .certifications {
+        padding: 15px 0;
+    }
+
+    .certification-box {
+        flex: 0 0 100%;
+    }
+
+    .certification-layer h4 {
+        font-size: 14px;
+    }
+
+    .certification-layer p {
+        font-size: 8px;
+    }
+
+    .certification-layer a {
+        font-size: 12px;
+    }
+
+    .certification-link i {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio {
         padding: 15px 0;
     }
 
