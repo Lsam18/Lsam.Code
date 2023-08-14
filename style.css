@@ -1127,12 +1127,7 @@ span {
 }
 
 
-
-
-/* Original CSS code */
-
-/* Add media query for screens with maximum width 768px (typical mobile screen width) */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .certifications {
         padding: 15px 0;
     }
@@ -1146,7 +1141,7 @@ span {
     }
 
     .certification-layer p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .certification-layer a {
