@@ -933,6 +933,7 @@ span {
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 20px;
+    
 }
 
 .certification-box {
@@ -943,6 +944,8 @@ span {
     border: 3px solid transparent;
     border-radius: 10px;
     overflow: hidden;
+    border: 3px solid #00abf0;
+
 }
 
 .certification-box:hover {
