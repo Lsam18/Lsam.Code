@@ -1305,7 +1305,7 @@ span {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 420px) {
     html {
         font-size: 50%;
     }
@@ -1315,9 +1315,10 @@ span {
     }
     .home-sci {
         width: 180px;
-        margin-bottom: -23px;
+        
 
     }
+    
     .home-sci a {
         width: 36px;
         height: 36px;
@@ -1328,6 +1329,7 @@ span {
 @media (max-width: 462px) {
     .home-content h1 {
         font-size: 5.2rem;
+        
 
     }
     .education {
@@ -1383,6 +1385,8 @@ span {
 @media (max-width: 400px) {
     .home {
         justify-content: center;
+        
+
 
     }
     .home-content {
@@ -1390,13 +1394,21 @@ span {
         align-items: center;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 20px;
+        
     }
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    
 
     .about-content {
-        font-size: 30px
+        font-size: 30px;
+        margin-bottom: -30px;
+        
     }
 
     .about .heading {
