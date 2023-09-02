@@ -87,6 +87,64 @@ function showProjects(category) {
    });
 }
 
+// Function to show all certifications with a pop-up fade-in animation
+function showAllCertifications() {
+   // Hide all certifications first
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.remove('active', 'visible');
+   });
+
+   // Show all certifications
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.add('active');
+
+       // Trigger a reflow to restart the animation
+       void box.offsetWidth;
+
+       box.classList.add('visible');
+   });
+}
+
+// Function to show only badges with a pop-up fade-in animation
+function showBadges() {
+   // Hide all certifications first
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.remove('active', 'visible');
+   });
+
+   // Show only badges
+   document.querySelectorAll('.certification-box.desktop').forEach((box) => {
+       box.classList.add('active');
+
+       // Trigger a reflow to restart the animation
+       void box.offsetWidth;
+
+       box.classList.add('visible');
+   });
+}
+
+// Function to show only certificates with a pop-up fade-in animation
+function showCertificates() {
+   // Hide all certifications first
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.remove('active', 'visible');
+   });
+
+   // Show only certificates
+   document.querySelectorAll('.certification-box.web').forEach((box) => {
+       box.classList.add('active');
+
+       // Trigger a reflow to restart the animation
+       void box.offsetWidth;
+
+       box.classList.add('visible');
+   });
+}
+
+// Show all certifications initially when the page loads
+window.addEventListener('load', showAllCertifications);
+
+
 // Function to show all projects with a pop-up fade-in animation
 function showAllProjects() {
    // Show all projects
@@ -99,6 +157,9 @@ function showAllProjects() {
        box.classList.add('visible');
    });
 }
+
+// Add an event listener to the "Show All" button
+document.getElementById('showAllProjectsButton').addEventListener('click', showAllProjects);
 
 
 
