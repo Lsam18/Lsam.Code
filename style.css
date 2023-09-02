@@ -1468,7 +1468,7 @@ span {
     transition: background-color 0.5s, color 0.5s; 
     margin-right: 50px; 
     margin-left: 120px; 
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* Button hover styles */
@@ -1527,6 +1527,8 @@ span {
         width: 90%; 
         margin: 5px; 
         font-size: 15px; 
+       
+        
     }
 }
 
