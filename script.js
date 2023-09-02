@@ -68,3 +68,47 @@ document.addEventListener('DOMContentLoaded', function () {
        behavior: 'smooth'
     });
  });
+
+// Function to show projects with a pop-up fade-in animation
+function showProjects(category) {
+   // Hide all projects first
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.remove('active', 'visible');
+   });
+
+   // Show only projects in the selected category
+   document.querySelectorAll(`.certification-box.${category}`).forEach((project) => {
+       project.classList.add('active');
+
+       // Trigger a reflow to restart the animation
+       void project.offsetWidth;
+
+       project.classList.add('visible');
+   });
+}
+
+// Function to show all projects with a pop-up fade-in animation
+function showAllProjects() {
+   // Show all projects
+   document.querySelectorAll('.certification-box').forEach((box) => {
+       box.classList.add('active');
+
+       // Trigger a reflow to restart the animation
+       void box.offsetWidth;
+
+       box.classList.add('visible');
+   });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

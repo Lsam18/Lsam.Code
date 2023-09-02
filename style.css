@@ -1421,3 +1421,113 @@ span {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.certification-box {
+    width: 300px;
+    margin-top: 20px;
+    display: none; 
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: rgb(238, 255, 0);
+}
+
+
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* styles to the .menu-button elements */
+.menu-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: #00abf0; 
+    border: 2px solid #00abf0; 
+    border-radius: 8px;
+    font-size: 12px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 550;
+    z-index: 1;
+    overflow: hidden;
+    transition: background-color 0.5s, color 0.5s; 
+    margin-right: 50px; 
+    margin-left: 120px; 
+    margin-top: 20px;
+}
+
+/* Button hover styles */
+.menu-button:hover {
+    background-color: #081b29; 
+    color: #00abf0; 
+    cursor: pointer;
+}
+
+/* Button before pseudo-element styles */
+.menu-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29; 
+    z-index: -1;
+    transition: width 0.5s; 
+}
+
+/*  CSS animation for the pop-up effect */
+
+.certification-box.active {
+    display: flex;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.certification-box.active.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Add a media query for mobile view */
+@media (max-width: 420px) {
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certification-box {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .menu-button {
+        width: 90%; 
+        margin: 5px; 
+        font-size: 15px; 
+    }
+}
+
+
