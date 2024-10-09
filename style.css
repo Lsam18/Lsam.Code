@@ -926,35 +926,35 @@ span {
 	color: white;
 }
 
-
 /* Certifications Section */
 .certifications {
 	padding: 30px 0;
 	background: #000000;
-	color: rgb(238, 255, 0);
+	color: #00FFD1; /* Bright teal for text */
 }
 
-
 .certifications p {
-	color: white;
+	color: #E0E0E0; /* Light grey for paragraph text */
 }
 
 .highlight {
-	color: white;
+	color: #FFD700; /* Golden yellow for highlights */
 }
 
 .subtle-highlight {
-	color: #7c7c7c;
+	color: #B0B0B0; /* Soft grey for subtle highlights */
 }
 
 .subtle-text {
 	font-size: 16px;
+	color: #CFCFCF; /* Lighter grey for subtle text */
 }
 
 .certifications .heading {
 	text-align: center;
 	margin-bottom: 15px;
 	margin-top: 20px;
+	color: #FFFFFF; /* White for heading */
 }
 
 .certifications-container {
@@ -963,7 +963,6 @@ span {
 	flex-wrap: wrap;
 	gap: 20px;
 	padding-top: 20px;
-
 }
 
 .certification-box {
@@ -971,19 +970,16 @@ span {
 	position: relative;
 	margin-bottom: 15px;
 	transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
-	border: 3px solid transparent;
 	border-radius: 10px;
 	overflow: hidden;
-	border: 2px solid #ffffff;
-
+	border: 2px solid #00FFD1; /* Teal border */
 }
 
 .certification-box:hover {
-	border: 3px solid #ffffff;
-	background-color: #000000;
+	border: 3px solid #FFD700; /* Gold border on hover */
+	background-color: #1A1A1A; /* Darker black background on hover */
 	transform: translateY(-3px);
 	z-index: 1;
-
 }
 
 .certification-image {
@@ -1009,7 +1005,6 @@ span {
 	border-radius: 10px;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
-
 }
 
 .certification-box:hover .certification-layer {
@@ -1017,27 +1012,14 @@ span {
 	animation: fade-in 0.3s forwards;
 }
 
-@keyframes fade-in {
-	from {
-		transform: translateY(100%);
-	}
-
-	to {
-		transform: translateY(0);
-	}
-}
-
-.certification-box:hover .certification-layer {
-	opacity: 1;
-}
-
 .certification-layer h4 {
 	margin-bottom: 6px;
 	font-size: 14px;
+	color: #FFD700; /* Gold for headings */
 }
 
 .certification-layer p {
-	color: #ffffff;
+	color: #E0E0E0; /* Light grey for paragraph text */
 	font-size: 12px;
 	max-width: 70%;
 	margin: 6px auto;
@@ -1045,7 +1027,7 @@ span {
 
 .certification-layer a {
 	margin-top: 8px;
-	color: #5f0505;
+	color: #00FFD1; /* Teal for links */
 	transition: color 0.3s ease-in-out;
 	font-weight: bold;
 	text-decoration: none;
@@ -1053,9 +1035,8 @@ span {
 }
 
 .certification-layer a:hover {
-	color: #081b29;
+	color: #FFD700; /* Gold on hover */
 }
-
 
 .certification-link {
 	position: relative;
@@ -1067,8 +1048,8 @@ span {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 18px;
-	color: #000000;
-	background-color: #ffffff;
+	color: #FFFFFF;
+	background-color: #00FFD1; /* Teal circle icon background */
 	border-radius: 50%;
 	padding: 6px;
 	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
@@ -1076,8 +1057,8 @@ span {
 }
 
 .certification-link i:hover {
-	background-color: #ffffff;
-	color: white;
+	background-color: #FFD700; /* Gold on hover */
+	color: black;
 }
 
 .btn-cert {
@@ -1087,8 +1068,8 @@ span {
 	align-items: center;
 	width: 150px;
 	height: 50px;
-	background: #ffffff;
-	border: 2px solid #ffffff;
+	background: #FFD700; /* Gold for button */
+	border: 2px solid #FFD700;
 	border-radius: 8px;
 	font-size: 17px;
 	color: #000000;
@@ -1106,8 +1087,7 @@ span {
 }
 
 .btn-cert a:hover {
-	color: #000000;
-
+	color: #FFFFFF;
 }
 
 .btn-cert a:hover::before {
@@ -1121,7 +1101,7 @@ span {
 	left: 0;
 	width: 0;
 	height: 100%;
-	background: #ffffff;
+	background: #00FFD1; /* Teal background for hover effect */
 	z-index: -1;
 	transition: 0.5s;
 }
@@ -1131,8 +1111,8 @@ span {
 }
 
 .btn-cert:hover {
-	color: #ffffff;
-	background: #000000;
+	color: #000000;
+	background: #00FFD1; /* Teal button on hover */
 }
 
 .animate.scroll {
@@ -1143,42 +1123,13 @@ span {
 	0% {
 		transform: translateY(0);
 	}
-
 	100% {
 		transform: translateY(-10px);
 	}
 }
 
-
 @media (max-width: 400px) {
 	.certifications {
-		padding: 15px 0;
-	}
-
-	.certification-box {
-		flex: 0 0 100%;
-	}
-
-	.certification-layer h4 {
-		font-size: 14px;
-	}
-
-	.certification-layer p {
-		font-size: 8px;
-	}
-
-	.certification-layer a {
-		font-size: 12px;
-	}
-
-	.certification-link i {
-		font-size: 16px;
-		margin-top: 8px;
-	}
-}
-
-@media (max-width: 400px) {
-	.portfolio {
 		padding: 15px 0;
 	}
 
